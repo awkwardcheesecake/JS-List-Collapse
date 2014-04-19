@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Js-list-collapse by awkwardcheesecake</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Js-list-collapse</h1>
+        <p>Use JQuery to collapse list items with title and content elements</p>
+
+        <p class="view"><a href="https://github.com/awkwardcheesecake/JS-List-Collapse">View the Project on GitHub <small>awkwardcheesecake/JS-List-Collapse</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/awkwardcheesecake/JS-List-Collapse/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/awkwardcheesecake/JS-List-Collapse/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/awkwardcheesecake/JS-List-Collapse">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a name="what-it-does" class="anchor" href="#what-it-does"><span class="octicon octicon-link"></span></a>What it does</h3>
+
+<p>This bit of JavaScript / jQuery allows you to make any piece of HTML an interactive, collapsible content block.</p>
+
+<h3>
+<a name="how-to-use-it" class="anchor" href="#how-to-use-it"><span class="octicon octicon-link"></span></a>How to Use It</h3>
+
+<ul>
+<li><p>Download the "js-list-collapse.js" file and link to it in your project.
+<em>Keep in mind that you have to have jQuery linked to BEFORE this file.</em></p></li>
+<li><p>Make sure your HTML is properly structured for this plugin, and add the necessary classes. Examples are given in the demo.html file, and a simple example is below:</p></li>
+</ul><pre><code>&lt;div&gt;
+    &lt;h3 class="jslc-ClickHeader"&gt;Title to click&lt;/h3&gt;
+    &lt;p class="jslc-subBlock"&gt;Content that will collapse&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><em>Important! All headers and sub blocks must share a parent, and only one header / sub block pair should be present per parent element. Think of the parent like box that holds the collapsible content together.</em></p>
+
+<ul>
+<li>Enjoy!
+That's all you need to get the script working.</li>
+</ul><h3>
+<a name="how-it-works" class="anchor" href="#how-it-works"><span class="octicon octicon-link"></span></a>How it Works</h3>
+
+<ul>
+<li><p>This script adds some code to the $(document).ready() call which searches the html for the "jslc-clickHeader" class. For each element, a "+" or a "-" is generated and placed in a span before the content. This is called the "expand symbol" and reflects whether clicking the element will show or hide the content. The reason for this auto-generation is so if the user has JavaScript turned off on their browser, all of the content will still be visible, as if this plugin had never been installed at all!</p></li>
+<li><p>A simple jQuery .click() event is added to the "jslc-clickHeader" elements that toggles the visibility of the "jslc-subBlock" and toggles the expand symbol between "+" and "-".</p></li>
+<li><p>The header is tied to the first sub block which shares a common parent, so all header / sub block pairs should have a common parent which holds only one header / sub block pair. Coding it this way makes it possible to have as many collapsible elements on a page as you would like, and be able to add or change them however you like without having to uniquely identify each item. </p></li>
+</ul><h3>
+<a name="who-wrote-this" class="anchor" href="#who-wrote-this"><span class="octicon octicon-link"></span></a>Who Wrote This?</h3>
+
+<p>Me! 
+Or, more specifically, Elijah Gill.</p>
+
+<h3>
+<a name="cool" class="anchor" href="#cool"><span class="octicon octicon-link"></span></a>Cool!</h3>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/awkwardcheesecake">awkwardcheesecake</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
