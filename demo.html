@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     <head>
         <meta charset="utf-8">
         <title>JS List Collapse Example</title>
 		
-		<script src="js/jquery-1.11.0.min"></script>
+		<!-- Include jQuery somewhere above the collapse script -->
+		<script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/js-list-collapse.js"></script>		
     </head>
     <body>
-
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        </script>
+		<!-- Parent div. The header and sub blocks MUST share a parent -->
+		<div >
+			<h3 class="jslc-clickHeader"><span class="jslc-expandSymbol">-</span> List Example</h3>
+			<div class="jslc-subBlock">
+				<ul>
+					<li>
+						This list will collapse
+					</li>
+					<li>
+						All items will be hidden
+					</li>
+					<li>
+						Ain't that neat!
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<span>
+			<h3 class="jslc-clickHeader"><span class="jslc-expandSymbol">-</span> Span Example</h3>
+			<span class="jslc-subBlock">
+				You can use any element for the header or the sub block.
+				
+				<h4>You can include any element within the sub block</h4>
+			</span>
+		</span>
+		
+		<ul>
+			<li>
+				<h3 class="jslc-clickHeader"><span class="jslc-expandSymbol">-</span> List Item Example</h3>
+				<span class="jslc-subBlock">
+					You can use it within a list!
+				</span>
+			</li>
+			<li>
+				<h3 class="jslc-clickHeader"><span class="jslc-expandSymbol">-</span> Wow!</h3>
+				<span class="jslc-subBlock">
+					Only one block per list item
+				</span>
+			</li>
+		</ul>
+	
+        
     </body>
 </html>
